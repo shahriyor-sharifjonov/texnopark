@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  &:focus,&:active{
+    outline: none;
+  }
+}
+html, body{
+  height: 100%;
+}
+button{
+  font-family: inherit;
+  cursor: pointer;
+}
+input{
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+.main{
+  flex: 1;
+}
