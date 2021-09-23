@@ -12,11 +12,11 @@ mixin sidebar()
         button(type="button").sidebar__filter-item Манипуляторы 
         button(type="button").sidebar__filter-item Эвакуаторы 
         button(type="button").sidebar__filter-item Ассенизаторы 
-        button(type="button").sidebar__filter-item Колесные экскаваторы 
-        button(type="button").sidebar__filter-item Гусеничные экскаваторы 
+        button(type="button").sidebar__filter-item Колесные <br>экскаваторы 
+        button(type="button").sidebar__filter-item Гусеничные <br>экскаваторы 
         button(type="button").sidebar__filter-item Самосвалы 
-        button(type="button").sidebar__filter-item Автокраны 
-        button(type="button").sidebar__filter-item Фронтальные погрузчики 
+        button(type="button").sidebar__filter-item.active Автокраны 
+        button(type="button").sidebar__filter-item Фронтальные <br>погрузчики 
         button(type="button").sidebar__filter-item Бульдозеры 
         button(type="button").sidebar__filter-item Компрессоры 
         button(type="button").sidebar__filter-item Тралы 
@@ -25,4 +25,26 @@ mixin sidebar()
         button(type="button").sidebar__filter-item Длинномеры 
         button(type="button").sidebar__filter-item Бортовые машины 
         button(type="button").sidebar__filter-item Тракторы 
-        button(type="button").sidebar__filter-item Полноповоротные экскаваторы 
+        button(type="button").sidebar__filter-item Полноповоротные <br>экскаваторы 
+      .sidebar__contact 
+        .sidebar__contact-item
+          .sidebar__contact-item-image
+            img(src="images/tel.svg", alt="tel").sidebar__contact-item-img
+          .sidebar__contact-content 
+            a(href="tel:+7384360-56-03").sidebar__contact-link +7 (3843) 60-56-03 
+            a(href="tel:+7923464-56-03").sidebar__contact-link +7 (923) 464-56-03 
+            a(href="tel:+7384332-85-05").sidebar__contact-link +7 (3843) 32-85-05
+        .sidebar__contact-item
+          .sidebar__contact-item-image
+            img(src="images/gmail.svg", alt="gmail").sidebar__contact-item-img
+          .sidebar__contact-content 
+            a(href="mailto:zayavkagspt@gmail.com").sidebar__contact-link zayavkagspt@gmail.com 
+        .sidebar__contact-item
+          .sidebar__contact-item-image
+            img(src="images/location.svg", alt="location").sidebar__contact-item-img
+          .sidebar__contact-content 
+            a(href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5,+4,+%D0%9D%D0%BE%D0%B2%D0%BE%D0%BA%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BA,+%D0%9A%D0%B5%D0%BC%D0%B5%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+654006/@53.7656972,87.0961003,17z/data=!3m1!4b1!4m5!3m4!1s0x42d0c0eab8b96a6f:0x4ff7cd2eec009db9!8m2!3d53.765694!4d87.098289").sidebar__contact-link <b>ТЕХНОПАРК</b> <br>г. Новокузнецк, <br>ул. Орджоникидзе, 4
+      form(action="").sidebar__form
+        p.sidebar__form-title Задать вопрос
+        input(type="tel" placeholder="+7 (_ _ _) _ _ _ _" required).sidebar__form-input  
+        button(type="submit").sidebar__btn Отправить
