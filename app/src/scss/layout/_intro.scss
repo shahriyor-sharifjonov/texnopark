@@ -1,0 +1,215 @@
+.intro{
+  width: 100%;
+  &__button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 15px;
+    @include media(1400) {
+      display: block;
+    }
+    &.open {
+      .intro__button-line,
+      &::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+      &::after {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-135deg);
+      }
+    }
+    &::before,
+    &::after,
+    &-line {
+      transition: 0.5s;
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #3f3f3f;
+    }
+    &::before {
+      top: 20%;
+    }
+    &::after {
+      bottom: 20%;
+    }
+    &-line {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    @include media(1088){
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  }
+  &__left{
+    flex: 1 1 auto;
+    background: url("../images/intro-bg.png") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media(1088){
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
+  }
+  &__title{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 60px;
+    text-align: right;
+    color: #FFFFFF;
+    max-width: 387px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 30px;
+    @include media(1088){
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      font-size: 45px;
+      line-height: 120%;
+    }
+  }
+  &__p{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 438px;
+    @include media(1088){
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__right{
+    @include media(1088){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-img{
+      position: relative;
+      max-width: 100%;
+      top: 40px;
+      right: 80px;
+      @include media(1560){
+        top: 4px;
+        right: 0;
+      }
+      @include media(1400){
+        top: 40px;
+        right: 80px;
+      }
+      @include media(1190){
+        top: 4px;
+        right: 0;
+      }
+      @include media(1088){
+        margin-top: 25px;
+      }
+    }
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    &-title{
+      background: linear-gradient(180deg, #CA8888 0%, #EB0000 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.06em;
+      text-align: center;
+      margin-top: 24px;
+      margin-bottom: 14px;
+    }
+    &-p{
+      font-style: italic;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #4F4F4F;
+      margin-bottom: 10px;
+    }
+    &-input{
+      max-width: 310px;
+      width: 100%;
+      padding-left: 11px;
+      background: #FFFFFF;
+      border: 1px solid #747474;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      height: 30px;
+      margin-bottom: 10px;
+      color: #3f3f3f;
+      &::placeholder{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #747474;
+      }
+    }
+    &-btn{
+      background: linear-gradient(180deg, #FFEE57 0%, #FFD600 100%);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+      border-radius: 4px;
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      color: #4F4F4F;
+      padding: 10px 30px;
+      border: none;
+      margin-bottom: 23px;
+    }
+    &-row{
+      display: flex;
+      align-items: center;
+    }
+    &-label{
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 13px;
+      text-align: center;
+      color: #4F4F4F;
+      margin-left: 10px;
+      a{
+        font-style: italic;
+        color: #4F4F4F;
+      }
+    }
+  }
+}

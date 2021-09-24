@@ -9,7 +9,7 @@
     outline: none;
   }
 }
-html, body{
+body{
   height: 100%;
 }
 button{
@@ -30,4 +30,9 @@ a{
 }
 .main{
   flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }

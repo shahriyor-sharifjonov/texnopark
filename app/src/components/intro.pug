@@ -1,0 +1,19 @@
+mixin intro()
+  .intro 
+    .intro__body 
+      .intro__left
+        h1.intro__title Аренда спецтехники
+        p.intro__p ПРИГЛАШАЕМ ВАС К ВЗАИМОВЫГОДНОМУ СОТРУДНИЧЕСТВУ И ГАРАНТИРУЕМ, ЧТО ВЫПОЛНИМ РАБОТУ КАЧЕСТВЕННО, ПРОФЕССИОНАЛЬНО И С НАИМЕНЬШИМИ ЗАТРАТАМИ ДЛЯ ВАС
+      .intro__right
+        button.intro__button 
+          span.intro__button-line
+        form(action="").intro__form
+          p.intro__form-title Срочно требуется техника?
+          p.intro__form-p Оставьте заявку и мы свяжемся с Вами
+          input(type="text" placeholder="Имя" required).intro__form-input
+          input(type="tel" placeholder="Телефон" required).intro__form-input
+          button(type="submit").intro__form-btn Заказать звонок
+          .intro__form-row 
+            input(id="chk" type="checkbox", name="chk" required).intro__form-chk
+            label(for="chk").intro__form-label Даю <a href="">Согласие на обработку персональных данных</a> 
+        img(src="images/intro-img.png", alt="").intro__right-img

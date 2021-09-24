@@ -4,6 +4,20 @@
   max-width: 384px;
   width: 100%;
   background: #001F4A;
+  @include media(1400){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 320px;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 400ms ease;
+    z-index: 55;
+    &.open{
+      transform: translateX(0);
+    }
+  }
   &__header{
     background: #002355;
     padding: 11px 35px 27px 35px;
@@ -60,7 +74,7 @@
       border-radius: 5px;
       border: none;
       font-weight: normal;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 17px;
       text-align: center;
       color: #FFFFFF;
