@@ -19,4 +19,31 @@ window.onclick = (e) => {
   )
     menuToggle();
 };
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZXNDb250ZW50IjpbXSwiZmlsZSI6ImluZGV4LmpzIn0=
+
+
+$('.advantages__carousel').slick({
+  // infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+});
+		

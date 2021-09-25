@@ -114,20 +114,23 @@
     }
     &-img{
       position: relative;
-      max-width: 100%;
+      width: calc(100% + 40px);
       top: 40px;
       right: 80px;
       @include media(1560){
         top: 4px;
         right: 0;
+        width: 100%;
       }
       @include media(1400){
         top: 40px;
         right: 80px;
+        width: calc(100% + 80px);
       }
       @include media(1190){
         top: 4px;
         right: 0;
+        width: 100%;
       }
       @include media(1088){
         margin-top: 25px;
