@@ -1,3 +1,21 @@
 mixin form()
   .form 
-    
+    form.form__content(action="")
+      p.form__title Форма заказа техники
+      .form__row
+        label(for="").form__label Имя
+        input(type="text" placeholder="Имя" required).form__input 
+      .form__row
+        label(for="").form__label Телефон
+        input(type="text" placeholder="Телефон" required).form__input 
+      .form__row
+        label(for="").form__label Какой вид техники<br>Вас интересует
+        input(type="text" placeholder="Вид техники" ).form__input 
+      button(type="submit").form__btn Отправить
+      .form__row_2 
+        input(type="checkbox", name="chk" id="chk2" required).form__chk
+        label(for="chk2").form__label_2 Даю Согласие на 
+          a(href="#!") обработку персональных данных
+    .form__info 
+      p.form__info-title Еще не определились, какая вам подойдет спецтехника?
+      p.form__info-p Оставьте заявку, и мы перезвоним вам, чтобы дать бесплатную консультацию. Специалисты компании помогут определиться с выбором и подобрать подходящую машину для выполнения конкретной работы.
