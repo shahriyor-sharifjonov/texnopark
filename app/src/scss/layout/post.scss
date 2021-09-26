@@ -1,0 +1,27 @@
+.post{
+  margin-bottom: 70px;
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &:not(:last-of-type){
+      margin-bottom: 50px;
+    }
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  &__p{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+    color: #4F4F4F;
+  }
+}

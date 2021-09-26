@@ -1,6 +1,7 @@
 .reviews{
   background: url('../images/reviews.png') center / cover no-repeat;
   padding-bottom: 65px;
+  margin-bottom: 80px;
   &__title{
     font-weight: 900;
     font-size: 48px;
@@ -86,6 +87,10 @@
     box-shadow: inset 4px 6px 6px rgba(0, 0, 0, 0.06);
     padding: 25px 12px 12px 12px;
     margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   &__p{
     font-style: italic;
