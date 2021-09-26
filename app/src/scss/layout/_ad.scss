@@ -1,0 +1,186 @@
+.ad{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  &__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../images/ad-top-bg.png') center / cover no-repeat;
+    padding: 15px 15px 14px 15px;
+    &-title{
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      @include media($sm){
+        font-size: 18px;
+        line-height: 120%;
+        margin-bottom: 4px;
+      } 
+    }
+    &-p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      @include media($sm){
+        font-size: 12px;
+        line-height: 120%;
+      } 
+    }
+  }
+  &__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../images/ad-bg.png') center / cover no-repeat;
+  }
+  &__row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    @include media($md){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__image{
+    z-index: -1;
+    margin-right: 35px;
+    max-width: 50%;
+    width: 50%;
+    img{
+      max-width: 100%;
+    }
+    @include media($md){
+      margin-bottom: 25px;
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  &__lists{
+    display: flex;
+  }
+  &__title{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-top: 90px;
+    background: linear-gradient(180deg, #CA8888 0%, #EB0000 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    width: max-content;
+    &::before{
+      content: '';
+      position: absolute;
+      left: -220px;
+      top: 12px;
+      width: 200px;
+      height: 1px;
+      background: #000;
+      @include media(900){
+        display: none;
+      }
+    }
+    @include media(992){
+      margin-right: 15px;
+    }
+    @include media(900){
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media($md){
+      font-size: 32px;
+    }
+    @include media(450){
+      font-size: 22px;
+    }
+  }
+  &__subtitle{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 30px;
+    @include media($md){
+      text-align: center;
+    }
+  }
+  &__list{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__li{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+    background: url('../images/ad-bottom-bg.png') center / cover no-repeat;
+    margin-bottom: 100px;
+    @include media(1200){
+      padding-bottom: 25px;
+    }
+    @include media(992){
+      padding: 50px 15px;
+    }
+  }
+  &__item{
+    width: 33.333%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include media(1200){
+      margin-bottom: 25px;
+    }
+    @include media(768){
+      width: 50%;
+    }
+    @include media($sm){
+      width: 100%;
+      justify-content: center;
+    }
+    &-img{
+      margin-right: 25px;
+      @include media(1200){
+        width: 70px;
+        height: 70px;
+      }
+      @include media(992){
+        margin-right: 7px;
+      }
+    }
+    &-p{
+      font-size: 18px;
+      line-height: 21px;
+      color: #4F4F4F;
+      width: 212px;
+      @include media(992){
+        margin-right: 7px;
+        font-size: 14px;
+      }
+    }
+  }
+}

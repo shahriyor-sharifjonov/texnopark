@@ -27,6 +27,12 @@ $('.advantages__carousel').slick({
   slidesToScroll: 1,
   responsive: [
     {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
       breakpoint: 1200,
       settings: {
         slidesToShow: 3,
@@ -39,7 +45,7 @@ $('.advantages__carousel').slick({
       }
     },
     {
-      breakpoint: 500,
+      breakpoint: 583,
       settings: {
         slidesToShow: 1,
       }
