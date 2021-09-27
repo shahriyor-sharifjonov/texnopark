@@ -1,0 +1,25 @@
+.header{
+  display: none;
+  @include media(1400){
+    display: flex;
+    position: fixed;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+    padding: 15px;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    background: #002355;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+    height: 70px;
+  }
+}

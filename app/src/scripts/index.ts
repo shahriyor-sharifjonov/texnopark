@@ -18,3 +18,4 @@ window.onclick = (e: MouseEvent) => {
   )
     menuToggle();
 };
+

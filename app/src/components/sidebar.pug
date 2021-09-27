@@ -10,22 +10,24 @@ mixin sidebar()
       .sidebar__filter  
         button(type="button").sidebar__filter-item Автовышки 
         button(type="button").sidebar__filter-item Манипуляторы 
-        button(type="button").sidebar__filter-item Эвакуаторы 
+        button(type="button").sidebar__filter-item.active Эвакуаторы 
         button(type="button").sidebar__filter-item Ассенизаторы 
         button(type="button").sidebar__filter-item Колесные <br>экскаваторы 
         button(type="button").sidebar__filter-item Гусеничные <br>экскаваторы 
-        button(type="button").sidebar__filter-item Самосвалы 
-        button(type="button").sidebar__filter-item.active Автокраны 
-        button(type="button").sidebar__filter-item Фронтальные <br>погрузчики 
-        button(type="button").sidebar__filter-item Бульдозеры 
-        button(type="button").sidebar__filter-item Компрессоры 
-        button(type="button").sidebar__filter-item Тралы 
-        button(type="button").sidebar__filter-item Автобетоносмесители 
-        button(type="button").sidebar__filter-item Автобетононасосы 
-        button(type="button").sidebar__filter-item Длинномеры 
-        button(type="button").sidebar__filter-item Бортовые машины 
-        button(type="button").sidebar__filter-item Тракторы 
-        button(type="button").sidebar__filter-item Полноповоротные <br>экскаваторы 
+        .sidebar__filter-hidden
+          button(type="button").sidebar__filter-item Самосвалы 
+          button(type="button").sidebar__filter-item Автокраны 
+          button(type="button").sidebar__filter-item Фронтальные <br>погрузчики 
+          button(type="button").sidebar__filter-item Бульдозеры 
+          button(type="button").sidebar__filter-item Компрессоры 
+          button(type="button").sidebar__filter-item Тралы 
+          button(type="button").sidebar__filter-item Автобетоносмесители 
+          button(type="button").sidebar__filter-item Автобетононасосы 
+          button(type="button").sidebar__filter-item Длинномеры 
+          button(type="button").sidebar__filter-item Бортовые машины 
+          button(type="button").sidebar__filter-item Тракторы 
+          button(type="button").sidebar__filter-item Полноповоротные <br>экскаваторы 
+        button(type="button").sidebar__btn.sidebar__filter-btn Смотреть все
       .sidebar__contact 
         .sidebar__contact-item
           .sidebar__contact-item-image

@@ -1,10 +1,11 @@
 .sidebar{
   box-shadow: 6px 0px 14px rgba(0, 0, 0, 0.36);
-  max-width: 384px;
-  width: 100%;
+  width: 343px;
   background: #001F4A;
+  position: fixed;
+  overflow-y: auto;
+  height: 100%;
   @include media(1400){
-    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -13,7 +14,6 @@
     transform: translateX(-100%);
     transition: 400ms ease;
     z-index: 55;
-    overflow-y: auto;
     &.open{
       transform: translateX(0);
     }
@@ -28,6 +28,7 @@
     &-p{
       font-weight: 500;
       font-size: 12px;
+      text-align: center;
       line-height: 14px;
       text-transform: uppercase;
       color: #FFEE57;
@@ -65,6 +66,24 @@
     flex-wrap: wrap;
     padding: 0 15px;
     margin-bottom: 38px;
+    &-btn{
+      margin-left: auto;
+      margin-right: auto;
+      letter-spacing: 0;
+      &.active{
+
+      }
+    }
+    &-hidden{
+      max-width: 100%;
+      display: none;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      &.active{
+        display: flex;
+      }
+    }
     &-item{
       width: calc(50% - 6px);
       height: 37px;

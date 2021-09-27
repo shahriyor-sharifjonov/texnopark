@@ -66,3 +66,20 @@ $('.reviews__carousel').slick({
   ]
 });
 		
+
+window.addEventListener('click', function(e){
+  if(e.target.classList.contains('sidebar__filter-btn')){
+    e.target.classList.toggle('active');
+    checkBtn()
+    document.querySelector('.sidebar__filter-hidden').classList.toggle('active')
+  }
+})
+
+function checkBtn(){
+  let btn = document.querySelector('.sidebar__filter-btn');
+  if(btn.classList.contains('active')){
+    btn.innerHTML = 'Закрыть'
+  }else{
+    btn.innerHTML = 'Смотреть все'
+  }
+}

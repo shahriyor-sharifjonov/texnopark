@@ -19,6 +19,7 @@ body{
   max-width: 100%;
   width: 100%;
   overflow-x: hidden;
+  zoom: 90%;
 }
 button{
   font-family: inherit;
@@ -40,7 +41,7 @@ a{
 }
 .main{
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   padding-left: 15px;
   padding-right: 15px;
   width: calc(100% - 343px);
