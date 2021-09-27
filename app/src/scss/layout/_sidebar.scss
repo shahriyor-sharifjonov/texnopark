@@ -25,6 +25,9 @@
     flex-direction: column;
     align-items: center;
     height: 113px;
+    @include media(1400){
+      display: none;
+    }
     &-p{
       font-weight: 500;
       font-size: 12px;
